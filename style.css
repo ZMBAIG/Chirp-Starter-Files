@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Hedvig+Letters+Sans&display=swap");
+
+:root {
+  --primary-text-color: rgb(147, 146, 146);
+  --btn-background-color: rgb(6, 156, 249);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Hedvig Letters Sans", sans-serif;
+  font-size: 16px;
+  height: 100vh;
+}
+#container {
+  display: grid;
+  justify-content: center;
+}
+.chirp-logo {
+  color: var(--btn-background-color);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+/* ========================Header=============================== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  height: 20%;
+  padding: 2rem 4rem;
+  font-size: 1.25rem;
+}
+header img {
+  display: none;
+}
+.nav-bar {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  align-content: center;
+}
+.nav-bar a:hover {
+  border-bottom: 2px solid var(--btn-background-color);
+  color: var(--btn-background-color);
+}
+.nav-bar > a:nth-child(3) {
+  text-transform: uppercase;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+.nav-bar .btn-twitter {
+  width: 100%;
+}
+.learn-more .btn-twitter,
+header .btn-twitter,
+.simple-price .btn-twitter {
+  background-color: var(--btn-background-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 4px;
+  font-weight: bold;
+  width: 40%;
+}
+.btn-twitter:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.btn-twitter > img {
+  margin-right: 0.5rem;
+}
+/* ========================Twitter Analytics=============================== */
+.twitter-analytic {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: 100%;
+  align-items: center;
+  padding: 0 4rem;
+  background-color: rgb(248, 242, 235, 06);
+}
+.twitter-analytic > article {
+  display: flex;
+  flex-direction: column;
+}
+
+.twitter-analytic h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+}
+
+.twitter-analytic p {
+  padding: 1rem 0;
+  line-height: 1.5;
+  color: var(--primary-text-color);
+}
+
+.learn-more {
+  display: flex;
+  align-items: center;
+}
+
+.learn-more a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--btn-background-color);
+  margin-left: 1rem;
+}
+.learn-more a:hover {
+  color: black;
+}
+.hero-image-desktop {
+  display: block;
+  object-fit: fill;
+  width: 100%;
+}
+
+.user-avatars {
+  padding: 2rem 0;
+  flex-grow: 4;
+  display: flex;
+}
+.user-avatars img {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 2.7rem;
+}
+
+.user-avatars img:nth-child(2) {
+  position: relative;
+  left: -1rem;
+}
+.user-avatars img:nth-child(3) {
+  position: relative;
+  left: -2rem;
+}
+.user-avatars img:nth-child(4) {
+  position: relative;
+  left: -3rem;
+}
+.user-avatars img:nth-child(5) {
+  position: relative;
+  left: -4rem;
+}
+.user-avatars img:nth-child(6) {
+  position: relative;
+  left: -5rem;
+}
+.user-avatars img:nth-child(7) {
+  position: relative;
+  left: -6rem;
+}
+.user-avatars img:nth-child(8) {
+  position: relative;
+  left: -7rem;
+}
+.user-avatars img:nth-child(9) {
+  position: relative;
+  left: -8rem;
+}
+
+.join {
+  width: 60%;
+}
+.join span {
+  font-size: 1rem;
+  color: rgb(30, 58, 110);
+  font-weight: 700;
+}
+
+/* ===============Features that help you Tweet smarter.=================== */
+h2 {
+  font-size: 2.5rem;
+  padding: 2rem 0;
+}
+.features-tweet-smarter {
+  padding: 2rem 4rem;
+}
+
+.features-tweet-smarter h2 {
+  width: 40%;
+}
+.sub-features-tweet-smarter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
+}
+.sub-features-tweet-smarter article {
+  border: rgb(144, 142, 142) solid 1px;
+  border-radius: 6px;
+  padding: 1.7rem;
+  box-shadow: 10px 3px 35px 0px rgba(0, 0, 0, 0.51);
+}
+
+i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.features-tweet-smarter article p {
+  padding: 1rem 0;
+  line-height: 1.5;
+  color: var(--primary-text-color);
+}
+/* ==========================What our customers say=================== */
+.customer-opinion-card {
+  padding: 3rem 4rem;
+  background-color: rgb(214, 245, 234, 0.6);
+}
+.customer-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 100%;
+  font-size: 0.85rem;
+}
+.sub-customer-card {
+  border-radius: 6px;
+  padding: 1.7rem;
+  background-color: #fff;
+}
+
+.sara-may {
+  display: flex;
+  justify-content: space-between;
+}
+.customer-opinion-card article:nth-child(1) {
+  height: 320px;
+  box-shadow: 10px 3px 35px 0px rgba(0, 0, 0, 0.51);
+}
+.customer-opinion-card article:nth-child(2) {
+  height: 380px;
+  box-shadow: 10px 3px 35px 0px rgba(0, 0, 0, 0.51);
+}
+.customer-opinion-card article:nth-child(3) {
+  height: 320px;
+  box-shadow: 10px 3px 35px 0px rgba(0, 0, 0, 0.51);
+}
+.sub-customer-card > p {
+  padding: 1rem 0;
+  line-height: 1.5;
+  color: var(--primary-text-color);
+}
+.sub-sara-may {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-sara-may img {
+  margin-right: 1rem;
+  border: 3px solid rgb(6, 156, 249, 0.3);
+  border-radius: 50%;
+  outline: 1px solid rgb(6, 156, 249, 0.6);
+}
+.author-title {
+  display: flex;
+  flex-direction: column;
+}
+.author-title h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.author-title p {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--primary-text-color);
+  padding: 0;
+}
+.like-twitter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.sub-like-twitter {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-text-color);
+}
+/* ========================One simple price plan=============================== */
+
+.simple-price-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 2rem 0;
+}
+
+.simple-price-plan p {
+  width: 30vw;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-text-color);
+}
+.simple-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: rgb(245, 86, 86, 0.3) solid 1px;
+  border-radius: 6px;
+  width: 40vw;
+  padding: 1rem;
+  background-color: rgba(247, 192, 190, 0.3);
+  box-shadow: 10px 3px 35px 0px rgba(0, 0, 0, 0.51);
+  color: var(--primary-text-color);
+}
+.simple-price ul {
+  width: 85%;
+}
+li hr {
+  margin: 1rem 0;
+}
+
+li h5 {
+  font-size: 2rem;
+  color: var(--primary-text-color);
+  margin: 1rem 0;
+}
+.price-plan {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+.monthly {
+  font-size: 1rem;
+  color: var(--primary-text-color);
+  margin-left: -1rem;
+}
+.price-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0;
+}
+.price-list li {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+.simple-price .btn-twitter {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0rem;
+  width: 70%;
+}
+.simple-price .btn-twitter:hover {
+  color: #000000;
+}
+/* =======================Footer================================ */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  background-color: rgb(214, 245, 234, 0.6);
+  padding: 2rem 4rem;
+  font-size: 1.25rem;
+}
+
+footer nav {
+  display: flex;
+  gap: 2rem;
+}
+
+footer nav a {
+  text-decoration: none;
+  color: black;
+}
+
+footer nav a:hover {
+  cursor: pointer;
+  color: var(--btn-background-color);
+}
+
+footer nav img:hover {
+  cursor: pointer;
+  color: var(--btn-background-color);
+}
+
+/* =======================Media Query================================ */
+
+@media (max-width: 480px) {
+  .nav-bar {
+    display: none;
+  }
+  header img {
+    display: block;
+  }
+  .twitter-analytic {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 0;
+  }
+  .hero-image-desktop {
+    display: block;
+    max-width: 100%;
+    align-items: center;
+    align-content: center;
+    padding: 0;
+  }
+  .twitter-analytic > article {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0;
+  }
+  .learn-more {
+    display: grid;
+    text-align: center;
+  }
+  .learn-more .btn-twitter {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .twitter-analytic h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .sub-features-tweet-smarter {
+    display: flex;
+    flex-direction: column;
+  }
+  .features-tweet-smarter h2 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .customer-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .simple-price {
+    width: 80%;
+  }
+  .simple-price-plan p {
+    padding: 0;
+    padding: 0;
+    width: 80%;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
